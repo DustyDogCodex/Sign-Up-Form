@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="left-side">
-        <h1>Odin</h1>
+        <div>
+            <h1><em>DefinitlelyNotAScam.com</em></h1>
+        </div>
     </div>
     <div class="right-side">
-        <div>
+        <div class="notForms">
             <h2>
                 This is not a real service! You know you need something like this beautifully designed sign-up form to help you fulfill your deepest dreams. Sign up <em>now</em> to get started.
             </h2>
@@ -20,22 +25,34 @@
         </div>
         <div class="signUp">
             <h1>Let's do this!</h1>
-            <form >
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="number" id="phoneNumber">
-                <label for="password">Password</label>
-                <input type="password" id="password">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password">
+            <form class="formInputs" action="someurl.com" method="post">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" id="phoneNumber" max="10000000000" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" minlength="6" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" minlength="6" required>
+                </div>
             </form>
         </div>
-        <div>
+        <div class="notForms">
             <button type="submit">Create Account</button>
             <p>Already have an account? <a href="completelyRealURL@url.com">Log In</a></p>
         </div>
